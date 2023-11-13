@@ -1,6 +1,6 @@
 import random
 
-# Generates a random integer between the specified minimum (inclusive) and maximum (inclusive) values
+# Generates a random integer.
 def get_functA(min_value, max_value):
     """
     Random integer.
@@ -11,7 +11,7 @@ def get_functA(min_value, max_value):
 def get_functB():
     return random.choice(['+', '-', '*'])
 
-#  Creates a formatted string representing a math problem and calculates the correct answer.
+#  Creates a formatted string .
 def calculate(num1, num2, operator):
     problem = f"{num1} {operator} {num2}"
     if operator == '+':
@@ -31,9 +31,9 @@ def math_quiz():
     print("You will be presented with math problems, and you need to provide the correct answers.")
 
     for _ in range(test_questions):
-        num1 = get_functA(1, 10); num2 = get_functA(1, 5.5); operator = get_functB()
+        n1 = get_functA(1, 10); n2 = get_functA(1, 5.5); o = get_functB()
 
-        PROBLEM, ANSWER = calculate(num1, num2, operator)
+        PROBLEM, ANSWER = calculate(n1, n2, o)
         print(f"\nQuestion: {PROBLEM}")
         
         try:
